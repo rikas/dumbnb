@@ -1,0 +1,9 @@
+<h1>List of flats</h1>
+
+<ul>
+  <% @flats.each do |flat| %>
+    <li>
+      <%= link_to flat["name"], flat_path(id: flat["id"]) %>
+    </li>
+  <% end %>
+</ul>

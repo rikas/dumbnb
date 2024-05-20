@@ -1,0 +1,13 @@
+<h1><%= @flat["name"] %></h1>
+<!--
+<img src="<%= @flat['imageUrl'] %>" width="300"/>
+-->
+<%= image_tag @flat["imageUrl"], width: 300 %>
+
+<p class="mt-2">
+  <%#= link_to "&larr; Back", root_path, class: "btn btn-primary" %>
+
+  <%= link_to root_path, class: "btn btn-primary" do %>
+    &larr; Back
+  <% end %>
+</p>
